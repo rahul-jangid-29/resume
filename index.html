@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Portfolio</a>
+            <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <ul id="nav-menu" class="hidden md:flex space-x-4">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Navbar Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="md:hidden bg-gray-800 text-white py-2">
+        <ul class="flex flex-col items-center space-y-2">
+            <li><a href="#about" class="block py-2">About</a></li>
+            <li><a href="#projects" class="block py-2">Projects</a></li>
+            <li><a href="#contact" class="block py-2">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Hi, I'm Rahul Jangid</h1>
+            <p class="text-lg">A passionate developer creating awesome websites and applications.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section-->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Skill cards will go here -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Data Structures and Algorithms</h3>
+                    <p class="text-gray-700 mb-4">Key Skill</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Languages</h3>
+                    <p class="text-gray-700 mb-4">C, C++, Java, JavaScript, Python</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Database</h3>
+                    <p class="text-gray-700 mb-4">Oracle, MongoDB</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Cloud</h3>
+                    <p class="text-gray-700 mb-4">AWS</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Frameworks</h3>
+                    <p class="text-gray-700 mb-4">React, Bootstrap, Tailwindcss</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Developer Tools</h3>
+                    <p class="text-gray-700 mb-4">VS Code, Eclipse, Oracle21C, Git/GitHub</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Soft Skills</h3>
+                    <p class="text-gray-700 mb-4">Time Management, Problem Solving, Fast-learner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg">Write something about yourself here.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section-->
+    <section id="experience" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Experience cards will go here -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Bharat Intern</h3>
+                    <p class="text-gray-700 mb-4">Intern</p>
+                    <p class="text-gray-700">Dates: Sep'23 2 Months</p>
+                    <p class="text-gray-700">Full Stack Developer Intern | Bharat Intern                                         
+                        Worked with Bharat Intern on Full-Stack Project , Wrote Front-End and Back-end codes in Video Conferencing and Text Utils.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project cards will go here -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">YouTube Clone</h3>
+                    <p class="text-gray-700 mb-4">YouTube Clone - Created a responsive YouTube-clone web app using REACT, Bootstrap, demonstrating front-end development skills and user-friendly design.
+                    </p>
+                    <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">View Project</a>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">E-Commerce Website</h3>
+                    <p class="text-gray-700 mb-4">E-Commerce Website - Developed a responsive and user-friendly E-Commerce website using React and Bootstrap showcasing my projects skills and achievements.
+                    </p>
+                    <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message"
+                        class="appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                        rows="5"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">Send
+                        Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 @rahuljangid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
